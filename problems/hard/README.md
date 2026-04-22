@@ -1,5 +1,8 @@
 # Hard Problem - Breast Cancer Wisconsin Classification
 
+> [!CAUTION]
+> Breast Cancer Wisconsin ist laut dem Professor ungeeignet und wird durch ein anderes ersetzt.
+
 Classification task on the Breast Cancer Wisconsin dataset.
 
 ## Problem Description
