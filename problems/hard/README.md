@@ -50,8 +50,3 @@ Choose from the defined benchmark set:
 
 ## Training
 The number of epochs: *TODO*
-
-## Notes
-- The label meanings should be documented clearly:
-    - 0 = malignant
-    - 1 = benign
