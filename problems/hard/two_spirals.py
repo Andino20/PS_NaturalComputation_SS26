@@ -25,7 +25,7 @@ def generate_two_spirals(n_samples=1000, noise=0.2):
     y = np.hstack([np.zeros(n), np.ones(n)])
     
     df = pd.DataFrame(X, columns=['x', 'y'])
-    df['target'] = y.astype(int)
+    df['label'] = y.astype(int)
     
     return df
 
@@ -42,7 +42,7 @@ plt.figure(figsize=(8, 8))
 plt.scatter(
     df['x'],
     df['y'],
-    c=df['target'],
+    c=df['label'],
     cmap='Spectral',
     edgecolors='k',
     alpha=0.7
