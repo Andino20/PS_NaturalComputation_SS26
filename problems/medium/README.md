@@ -15,7 +15,7 @@ The three output classes are:
 - 2 = virginica
 
 ## Dataset
-The dataset is provided as `iris.csv`.
+The dataset is provided as `iris_train.csv` & `iris_test.csv`.
 
 ### Columns
 - sepal length (cm)
