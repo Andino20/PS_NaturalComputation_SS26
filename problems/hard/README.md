@@ -41,7 +41,7 @@ Binary classification
 ## Suggested Activation Functions
 Choose from the defined benchmark set:
 - ReLU
-- Leaky ReLU
+- GeLU
 - Sigmoid
 - TanH
 - Swish
