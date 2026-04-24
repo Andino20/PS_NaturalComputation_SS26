@@ -7,9 +7,13 @@ The goal is to distinguish between two interlocking spirals where one spiral fol
 | No-noise  | With-noise |
 | ------------- | ------------- |
 | ![Crossing Spirals no noise](crossing_spirals_no_noise.png) | ![Crossing Spirals no noise](crossing_spirals_noise.png) |
-The two input features are:
-- Feature X (Cartesian x-coordinate)
-- Feature Y (Cartesian y-coordinate)
+The six input features are:
+- x
+- y
+- x_sin: $\sin(x)$
+- y_sin: $\sin(y)$
+- x_cos: $\cos(x)$
+- y_cos: $\cos(y)$
 
 The two output classes are:
 - 0 = Red Spiral
@@ -24,12 +28,12 @@ The dataset is provided as `crossing_spirals_train.csv` & `crossing_spirals_test
 - label
 
 ## Suggested Network Topology
-- Input layer: 2 neurons
-- Hidden layer 1: 32 neurons
-- Hidden layer 2: 32 neurons
+- Input layer: 6 neurons
+- Hidden layer 1: 16 neurons
+- Hidden layer 2: 16 neurons
 - Output layer: 1 neuron 
 
-Suggested topology: **2-32-32-1**
+Suggested topology: **2-16-16-1**
 
 ## Task Type
 Binary classification
@@ -44,4 +48,4 @@ Choose from the defined benchmark set:
 - Identity
 
 ## Training
-The number of epochs: 300
+The number of epochs: 250

@@ -44,4 +44,4 @@ Choose from the defined benchmark set:
 - Identity
 
 ## Training
-The number of epochs: *TODO* 
+The number of epochs: 150

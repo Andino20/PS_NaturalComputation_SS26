@@ -32,7 +32,7 @@ def generate_concentric_circles(n_samples=1000, noise=0.05, factor=0.4):
     return df
 
 if __name__ == "__main__":
-    df = generate_concentric_circles(n_samples=1000, noise=0.1, factor=0.4)
+    df = generate_concentric_circles(n_samples=1000, noise=0.1, factor=0.5)
     train_df, test_df = train_test_split(df, test_size=0.2, random_state=42, stratify=df['label'])
     
     train_df.to_csv("concentric_circles_train.csv", index=False)
