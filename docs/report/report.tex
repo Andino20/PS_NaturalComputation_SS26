@@ -42,10 +42,10 @@
 \vspace{2cm}
 
 \centerline{\large{PS Natural Computation}}
-\centerline{SS 24}
+\centerline{SS 26}
 \vspace{1cm}
 
-\centerline{\Large{\bf{Title}} }%Type of the Document
+\centerline{\Large{\bf{AF Basics Group}} }%Type of the Document
 \vspace{1cm}
 
 \vspace{0.4cm}%Date
@@ -55,9 +55,11 @@
 %\hline
 \vspace{0.2cm}
 Project Members:\\
-\centerline{Name, ID, Email}\\
-\centerline{Name, ID, Email}\\
-\centerline{\ldots}
+\centerline{Gerwin Bacher}\\
+\centerline{Andreas Schlager}\\
+\centerline{Linda Schmidt}\\
+\centerline{Tomas Tomandl}\\
+\centerline{Sophie Wagner}\\
 \vspace {1cm}\\
 
 Academic Supervisor: \\
@@ -85,10 +87,55 @@ Correspondence to: \\
 \pagenumbering{arabic}  %Better if TOC is variable (more than one page)
 \setcounter{page}{1}
 
-\abstract{Here comes the abstract.}
+\abstract{
+Artificial neural networks are widely used in modern machine learning for classification 
+and pattern recognition tasks. Their performance depends on several design choices, 
+such as the network architecture and the activation functions used in the neurons. This 
+project examines how different activation functions affect neural network performance 
+on classification tasks of varying difficulty. 
+Three benchmark problems were defined for all participating groups. These include the 
+classification of concentric circles as an easy task , the two-moons problem as an 
+medium hard task and overlapping spirals as a more challenging one. To establish a 
+common baseline for later experiments, our group evaluates six activation functions: 
+ReLU, Sine, GeLU, Sigmoid, TanH, and Swish, using identical network architectures. In 
+each case, a single activation function is applied consistently across all neurons in the 
+network. 
+The results of this baseline study will serve as a reference for other groups investigating 
+whether adapting activation functions at the neuron level can improve overall neural 
+network performance.
+}
 
 \section{Introduction}
+Natural computation studies computational methods inspired by processes found in 
+nature. A central example of this field is artificial neural networks, which are modeled 
+after the structure and functioning of biological brains. These networks learn patterns 
+from data and are widely used in classification, prediction, and optimization tasks. 
+A neural network consists of interconnected neurons arranged in layers. Each neuron 
+processes incoming signals and passes its output to the next layer. A key component in 
+this process is the activation function, which determines how strongly a neuron responds 
+to its input and introduces nonlinearity into the model. Without such nonlinearities, 
+neural networks would be limited to solving only linearly separable problems. 
+Different activation functions exhibit different mathematical properties, which in turn 
+influence how a network learns. Some lead to faster convergence, while others improve 
+stability or enable the learning of more complex patterns. In this work, we compare six 
+commonly used activation functions: ReLU, Sine, GeLU, Sigmoid, TanH, and Swish. 
+To analyze their behavior, three classification problems with increasing difficulty were 
+defined. The first consists of two concentric circles and represents a relatively simple 
+nonlinear task. The second is the well-known two-moons problem, which typically 
+achieves an accuracy of around 85 to 95 percent. The third problem involves two 
+overlapping spirals, a benchmark known for its high level of nonlinearity and difficulty. 
 
+To ensure fair comparisons, the neural network architecture was fixed across all 
+experiments and participating groups, including the number of layers and neurons per 
+layer. This allows the effects of different activation functions to be observed more directly. 
+The main goal of this project is to investigate whether neural networks can achieve better 
+performance when activation functions are adapted individually for each neuron rather 
+than being fixed across the entire model. As a first step, however, a solid baseline is 
+required. Therefore, this study focuses on training and evaluating networks that use a 
+single activation function consistently. 
+The results provide a foundation for future comparisons with adaptive activation 
+approaches and may help identify which activation functions are better suited to specific 
+types of classification problems.
 \newpage
 
 \section{Milestones} % NOT in final paper
