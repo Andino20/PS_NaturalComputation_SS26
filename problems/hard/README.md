@@ -6,7 +6,8 @@ The goal is to distinguish between two interlocking spirals where one spiral fol
 
 | No-noise  | With-noise |
 | ------------- | ------------- |
-| ![Crossing Spirals no noise](crossing_spirals_no_noise.png) | ![Crossing Spirals no noise](crossing_spirals_noise.png) |
+| ![Crossing Spirals no noise](crossing_spirals_no_noise.png) | ![Crossing Spirals with noise](crossing_spirals_noise.png) |
+
 The six input features are:
 - x
 - y
@@ -25,6 +26,10 @@ The dataset is provided as `crossing_spirals_train.csv` & `crossing_spirals_test
 ### Columns
 - x
 - y
+- x_sin
+- y_sin
+- x_cos
+- y_cos
 - label
 
 ## Suggested Network Topology
@@ -33,7 +38,7 @@ The dataset is provided as `crossing_spirals_train.csv` & `crossing_spirals_test
 - Hidden layer 2: 16 neurons
 - Output layer: 1 neuron 
 
-Suggested topology: **2-16-16-1**
+Suggested topology: **6-16-16-1**
 
 ## Task Type
 Binary classification

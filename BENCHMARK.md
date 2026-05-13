@@ -128,6 +128,20 @@ Baseline results should be reported in this format:
 
 The same table structure should be used for Medium and Hard.
 
+## Reference Implementation
+
+The repository contains a small dependency-free reference implementation:
+
+```bash
+python3 run_benchmark.py
+```
+
+It trains all benchmark problems with all selected activation functions and writes the final metrics to:
+
+```text
+results/baseline_results.csv
+```
+
 ## Baseline Scope
 
 The basic baseline does not include:
@@ -145,4 +159,3 @@ These variations may be useful later, but they should only be tested after the b
 The baseline experiment answers the question:
 
 > Under identical training conditions, which activation function performs best on each benchmark problem?
-
