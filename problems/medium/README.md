@@ -1,38 +1,39 @@
-# Medium Problem: Iris Dataset Classification
-Classification task on the Iris dataset.
+# Medium Problem: Two Moons Classification
+Non-linear binary classification task on two interleaving moon-shaped classes.
 
 ## Problem Description
-The goal is to classify iris flowers into one of three species based on four input features:
+The goal is to classify each point into one of two classes based on two input features:
 
-- sepal length (cm)
-- sepal width (cm)
-- petal length (cm)
-- petal width (cm)
+- x
+- y
 
-The three output classes are:
-- 0 = setosa
-- 1 = versicolor
-- 2 = virginica
+The two output classes are:
+- 0 = first moon
+- 1 = second moon
 
 ## Dataset
-The dataset is provided as `iris_train.csv` & `iris_test.csv`.
+The dataset is provided as `two_moons_train.csv` & `two_moons_test.csv`.
+
+- Total samples: 1000
+- Train/test split: 80% / 20%
+- Noise: 0.2
+- Random seed: 42
 
 ### Columns
-- sepal length (cm)
-- sepal width (cm)
-- petal length (cm)
-- petal width (cm)
+- x
+- y
 - label
 
 ## Suggested Network Topology
-- Input layer: 4 neurons
-- Hidden layer: 8 neurons
-- Output layer: 3 neurons
+- Input layer: 2 neurons
+- Hidden layer 1: 8 neurons
+- Hidden layer 2: 8 neurons
+- Output layer: 1 neuron
 
-Suggested topology: **4-8-3**
+Suggested topology: **2-8-8-1**
 
 ## Task Type
-Multiclass classification
+Binary classification
 
 ## Suggested Activation Functions
 Choose from the defined benchmark set:
@@ -42,6 +43,11 @@ Choose from the defined benchmark set:
 - TanH
 - Swish
 - Identity
+
+## Activation Function Placement
+- Input layer: no activation function
+- Hidden layers: selected activation function
+- Output layer: Sigmoid
 
 ## Training
 The number of epochs: 150
