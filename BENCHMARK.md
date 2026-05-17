@@ -8,8 +8,8 @@ The goal is to keep the benchmark simple and comparable: each experiment should 
 
 | Difficulty | Problem | Task | Input Features | Output Neurons | Topology | Epochs |
 |---|---|---|---:|---:|---|---:|
-| Easy | Concentric Circles | Binary classification | 2 | 1 | `2-8-1` | 100 |
-| Medium | Two Moons | Binary classification | 2 | 1 | `2-8-8-1` | 150 |
+| Easy | Two Moons | Binary classification | 2 | 1 | `2-8-1` | 100 |
+| Medium | Concentric Circles | Binary classification | 2 | 1 | `2-8-8-1` | 150 |
 | Hard | Crossing Spirals | Binary classification | 6 | 1 | `6-16-16-1` | 250 |
 
 All three benchmark problems are binary classification tasks. This keeps the output layer, loss function, and evaluation procedure identical across all difficulties.

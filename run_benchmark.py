@@ -13,14 +13,14 @@ ACTIVATIONS = ["ReLU", "GeLU", "Sigmoid", "TanH", "Swish", "Identity"]
 
 PROBLEMS = {
     "Easy": {
-        "train": ROOT / "problems/easy/concentric_circles_train.csv",
-        "test": ROOT / "problems/easy/concentric_circles_test.csv",
+        "train": ROOT / "problems/easy/two_moons_train.csv",
+        "test": ROOT / "problems/easy/two_moons_test.csv",
         "hidden_layers": [8],
         "epochs": 100,
     },
     "Medium": {
-        "train": ROOT / "problems/medium/two_moons_train.csv",
-        "test": ROOT / "problems/medium/two_moons_test.csv",
+        "train": ROOT / "problems/medium/concentric_circles_train.csv",
+        "test": ROOT / "problems/medium/concentric_circles_test.csv",
         "hidden_layers": [8, 8],
         "epochs": 150,
     },
